@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakhya Sharma | Applied Geophysics | Earthquake Research</title>
+<meta name="description" content="Portfolio of Sakhya Sharma, M.Sc.Tech Applied Geophysics student at the Indian Institute of Technology (Indian School of Mines), Dhanbad, working across earthquake research, ground-motion analysis and scientific computing.">
+<meta property="og:title" content="Sakhya Sharma | Applied Geophysics | Earthquake Research">
+<meta property="og:description" content="Portfolio of Sakhya Sharma, M.Sc.Tech Applied Geophysics student at the Indian Institute of Technology (Indian School of Mines), Dhanbad.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav"><div class="navrow">
+  <div class="logo">Sakhya Sharma</div>
+  <ul class="navlinks" id="navlinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#lab">Lab</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button class="themebtn" id="themeBtn">Light / Dark</button></li>
+  </ul>
+  <div style="display:flex; align-items:center; gap:10px">
+    <button class="searchbtn" id="searchBtn" aria-label="Search site" title="Search (Ctrl+K)">🔍</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+  </div>
+</div>
+<div class="searchoverlay" id="searchOverlay">
+  <div class="searchpanel">
+    <div class="searchinputrow">
+      <span>🔍</span>
+      <input type="text" id="siteSearch" placeholder="Search projects, skills, sections… (Ctrl+K)" autocomplete="off">
+      <button id="searchClose" aria-label="Close search">✕</button>
+    </div>
+    <ul class="searchresults" id="searchResults"></ul>
+  </div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="wrap herogrid">
+    <div>
+      <div class="role fadeup">M.Sc.Tech Applied Geophysics<div class="college-line"><span class="college-name">Indian Institute of Technology (Indian School of Mines), Dhanbad</span></div></div>
+      <h1 class="fadeup">Exploring Earth Through Data, Physics &amp; Technology.</h1>
+      <p class="lede fadeup">Applied Geophysics student working across earthquake ground-motion analysis, scientific computing, data analysis and interactive web applications.</p>
+      <div class="btnrow fadeup">
+        <a href="#research" class="btn primary">Explore Research</a>
+        <a href="#lab" class="btn">Enter Scientific Lab</a>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="assets/documents/Sakhya-Sharma-CV.pdf" download class="btn">Download CV</a>
+      </div>
+    </div>
+    <canvas id="waveCanvas"></canvas>
+  </div>
+</section>
+
+<section style="padding-top:60px; padding-bottom:60px;">
+  <div class="wrap reveal">
+    <div class="metrics">
+      <div class="metric"><div class="num" data-target="0" data-label="msc">M.Sc.Tech</div><div class="lbl">Applied Geophysics</div></div>
+      <div class="metric"><div class="num" data-count="8.33" data-suffix="/10">0</div><div class="lbl">Current CGPA</div></div>
+      <div class="metric"><div class="num" data-count="101">0</div><div class="lbl">RSN Stations Examined</div></div>
+      <div class="metric"><div class="num" data-count="3">0</div><div class="lbl">Ground Motion Components</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow reveal">About</div>
+    <h2 class="section-title reveal">Where Physics Meets Computation.</h2>
+    <p class="section-sub reveal">A brief look at the three threads running through my work.</p>
+    <div class="cardgrid reveal">
+      <div class="card"><h3>Earth Science</h3><p>Applied geophysics coursework, geological field training, and hands-on lithological mapping and structural measurement in the field.</p></div>
+      <div class="card"><h3>Research &amp; Scientific Computing</h3><p>Processing PEER ground-motion records in Python — deriving velocity and displacement histories from acceleration through numerical integration.</p></div>
+      <div class="card"><h3>Web &amp; Data Applications</h3><p>Building interactive interfaces with HTML, CSS, JavaScript and React to make ground-motion data explorable rather than static.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="eyebrow reveal">Featured Research</div>
+    <h2 class="section-title reveal">Identification and Extraction of Step-Fling Pulse</h2>
+    <div class="meta-row reveal">
+      <span>Scholar: <span class="college-name">Indian Institute of Technology (Indian School of Mines), Dhanbad</span></span>
+      <span>DST-INSPIRE Scholarship for Higher Education</span>
+      <span>Hosted at: IIT (BHU), Varanasi — Dept. of Civil Engineering</span>
+      <span>Supervisor: Dr. Kshitij Kumar Yadav</span>
+      <span>June – July 2026 · 8 weeks</span>
+    </div>
+
+    <div class="flow reveal">
+      <div class="step">Earthquake</div><div class="arrow">→</div>
+      <div class="step">Ground Motion</div><div class="arrow">→</div>
+      <div class="step">Acceleration</div><div class="arrow">→</div>
+      <div class="step">Velocity</div><div class="arrow">→</div>
+      <div class="step">Displacement</div><div class="arrow">→</div>
+      <div class="step">Fling-Step Investigation</div>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:12px">Concept</h3>
+      <p style="color:var(--sub)">Near-fault earthquake ground motions can contain distinctive long-period pulses. Fling-step effects are associated with permanent tectonic offset across a rupturing fault — an idealized fling-step record can show a one-sided velocity pulse alongside non-zero permanent displacement. Interpreting that permanent displacement is sensitive to baseline errors, low-frequency processing, and integration errors, which is why careful preprocessing is central to this work.</p>
+      <ul class="objectives">
+        <li>Understand the physical origin and engineering significance of fling-step motion.</li>
+        <li>Obtain and organize PEER acceleration records.</li>
+        <li>Examine H1, H2 and Vertical components from 101 RSN stations.</li>
+        <li>Derive velocity and displacement histories from acceleration.</li>
+        <li>Identify one-sided long-period velocity-pulse characteristics.</li>
+        <li>Distinguish permanent/static displacement from transient shaking.</li>
+        <li>Develop a reproducible data-processing workflow.</li>
+      </ul>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:6px">101 Analyzed Stations</h3>
+      <p style="color:var(--sub); font-size:.9rem">Abstract visualization — hover a node to see its assigned component. Station identifiers below are illustrative placeholders, not real RSN numbers.</p>
+      <div id="nodeGrid"></div>
+      <div id="nodeTip">Hover a node…</div>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:12px">Data Flow</h3>
+      <div class="flow">
+        <div class="step">PEER Database</div><div class="arrow">→</div>
+        <div class="step">101 RSN Stations</div><div class="arrow">→</div>
+        <div class="step">H1 / H2 / Vertical</div><div class="arrow">→</div>
+        <div class="step">Acceleration</div><div class="arrow">→</div>
+        <div class="step">Velocity</div><div class="arrow">→</div>
+        <div class="step">Displacement</div><div class="arrow">→</div>
+        <div class="step">Pulse Analysis</div>
+      </div>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:12px">Documented Results</h3>
+      <ul style="color:var(--sub); padding-left:20px; display:grid; gap:6px">
+        <li>101 RSN stations examined across H1, H2 and Vertical components.</li>
+        <li>Acceleration, velocity and displacement histories generated and interpreted.</li>
+        <li>Time-domain indicators of long-period pulses investigated.</li>
+        <li>Baseline and low-frequency processing effects examined.</li>
+        <li>A repeatable data-analysis workflow developed in Python.</li>
+        <li>Practical, hands-on understanding of PEER ground-motion records gained.</li>
+      </ul>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:10px">Future Work</h3>
+      <p style="color:var(--sub)">The extracted pulse parameters could be used to classify records quantitatively, compare fling-step against forward-directivity motions, investigate pulse-period and amplitude relationships, and evaluate how fling-step motions influence structural response — with automated signal processing and statistical classification as further extensions.</p>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:10px">References</h3>
+      <ul style="color:var(--sub); font-size:.88rem; padding-left:20px; display:grid; gap:6px">
+        <li>Pacific Earthquake Engineering Research Center (PEER), NGA-West2 Ground Motion Database, University of California, Berkeley.</li>
+        <li>Yadav, K. K. and Gupta, V. K. (2017). Near-fault fling-step ground motions: Characteristics and simulation. <em>Soil Dynamics and Earthquake Engineering</em>, 101, 90–104.</li>
+        <li>Yadav, K. K. and Gupta, V. K. (2016). A predictive model for fling-step in near-fault ground motions based on recordings and simulations. <em>Soil Dynamics and Earthquake Engineering</em>, 80, 119–126.</li>
+        <li>USGS (2014). Adding fling effects to processed ground-motion time histories.</li>
+        <li>Daei, A., Poursha, M. and Zarrin, M. (2023). Sensitivity of structural responses to the processing of near-fault ground motion records containing fling-step.</li>
+        <li>Chang, Z., Li, W., Goda, K. and Yan, Z. (2025). Automated Recovery of Permanent Displacement in Near-Fault Ground Motions with Fling-Step Effects. <em>Earthquake Engineering &amp; Structural Dynamics</em>, 54(14), 3685–3704.</li>
+      </ul>
+    </div>
+
+    <div class="researchbox reveal">
+      <h3 style="margin-bottom:10px">Downloads</h3>
+      <div class="btnrow" style="margin-top:0">
+        <a href="assets/documents/Sakhya-Sharma-CV.pdf" download class="btn">Download CV</a>
+        <a href="assets/documents/Sakhya-Sharma-Research-Project-Report.pdf" download class="btn">Download Research Report</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap">
+    <div class="eyebrow reveal">Earthquake Research Lab</div>
+    <h2 class="section-title reveal">Interactive ground-motion analysis demonstration</h2>
+    <p class="section-sub reveal">Generate a synthetic acceleration signal and watch velocity and displacement derived from it in real time via trapezoidal numerical integration. <span class="demolabel">Synthetic demonstration data</span></p>
+
+    <div class="labgrid reveal">
+      <div class="controls">
+        <label>Amplitude (g) <span id="ampV">0.30</span><input type="range" id="amp" min="0.05" max="1" step="0.01" value="0.3"></label>
+        <label>Frequency (Hz) <span id="freqV">2.0</span><input type="range" id="freq" min="0.2" max="8" step="0.1" value="2"></label>
+        <label>Duration (s) <span id="durV">20</span><input type="range" id="dur" min="5" max="40" step="1" value="20"></label>
+        <label>Sampling Rate (Hz) <span id="srV">100</span><input type="range" id="sr" min="20" max="200" step="10" value="100"></label>
+        <label>Noise <span id="noiseV">0.02</span><input type="range" id="noise" min="0" max="0.2" step="0.01" value="0.02"></label>
+        <label>Pulse Width (s) <span id="pwV">2.0</span><input type="range" id="pw" min="0.5" max="6" step="0.1" value="2"></label>
+        <label>Pulse Position <span id="ppV">0.50</span><input type="range" id="pp" min="0" max="1" step="0.05" value="0.5"></label>
+        <div class="btnrow" style="margin-top:6px">
+          <button class="btn primary" id="genBtn" style="border:none">Generate Signal</button>
+          <button class="btn" id="resetBtn">Reset</button>
+          <button class="btn" id="csvBtn">Download CSV</button>
+        </div>
+      </div>
+      <div class="labcharts">
+        <div class="chartbox"><div class="chartlabel">Acceleration (g)</div><canvas id="cAcc"></canvas></div>
+        <div class="chartbox"><div class="chartlabel">Velocity (m/s) — ∫ acceleration dt</div><canvas id="cVel"></canvas></div>
+        <div class="chartbox"><div class="chartlabel">Displacement (m) — ∫ velocity dt</div><canvas id="cDisp"></canvas></div>
+        <div class="metricrow">
+          <div><div class="v" id="mPGA">–</div><div class="k">PGA</div></div>
+          <div><div class="v" id="mPGV">–</div><div class="k">PGV</div></div>
+          <div><div class="v" id="mPGD">–</div><div class="k">PGD</div></div>
+          <div><div class="v" id="mN">–</div><div class="k">Samples</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning reveal">
+      <h4>Processing Matters</h4>
+      <p>Baseline errors and low-frequency processing can influence apparent permanent displacement, and numerical integration can amplify low-frequency error. Candidate fling-step characteristics therefore require appropriate preprocessing and validation — this demo is illustrative only and is not a substitute for that process.</p>
+    </div>
+  </div>
+</section>
+
+<section id="methodology">
+  <div class="wrap">
+    <div class="eyebrow reveal">Methodology</div>
+    <h2 class="section-title reveal">Research Workflow</h2>
+    <div class="timeline reveal">
+      <div class="titem"><h3>01 · Select earthquake records</h3></div>
+      <div class="titem"><h3>02 · Organize 101 RSN stations</h3></div>
+      <div class="titem"><h3>03 · Separate H1, H2 and Vertical components</h3></div>
+      <div class="titem"><h3>04 · Construct time vector</h3></div>
+      <div class="titem"><h3>05 · Inspect acceleration</h3></div>
+      <div class="titem"><h3>06 · Integrate acceleration → velocity</h3></div>
+      <div class="titem"><h3>07 · Integrate velocity → displacement</h3></div>
+      <div class="titem"><h3>08 · Check baseline errors</h3></div>
+      <div class="titem"><h3>09 · Check low-frequency drift</h3></div>
+      <div class="titem"><h3>10 · Identify candidate one-sided velocity pulses</h3></div>
+      <div class="titem"><h3>11 · Examine residual displacement</h3></div>
+      <div class="titem"><h3>12 · Compare components</h3></div>
+      <div class="titem"><h3>13 · Document characteristics</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow reveal">Experience</div>
+    <h2 class="section-title reveal">Timeline</h2>
+    <div class="timeline reveal">
+      <div class="titem">
+        <h3>DST-INSPIRE Summer Research Project — IIT BHU</h3>
+        <div class="when">June 2026 – July 2026</div>
+        <ul><li>Researched identification and extraction of fling-step pulses from near-fault ground-motion records.</li>
+        <li>Analyzed 101 RSNs from the PEER Ground Motion Database.</li>
+        <li>Processed H1, H2 and Vertical components; derived acceleration, velocity and displacement histories in Python.</li>
+        <li>Investigated long-period velocity pulses and permanent ground displacement.</li></ul>
+      </div>
+      <div class="titem">
+        <h3>Research and Web Development Intern — IIT BHU</h3>
+        <div class="when">June 2026 – July 2026</div>
+        <ul><li>Developed an interactive web-based earthquake ground-motion analysis application using PEER data.</li>
+        <li>Automated processing to generate time vector, PGA, PGV and PGD.</li>
+        <li>Applied Python, HTML, CSS and JavaScript across data processing, visualization and the web app.</li></ul>
+      </div>
+      <div class="titem">
+        <h3>Research and Web Development Intern</h3>
+        <div class="when">June 2026 – July 2026</div>
+        <ul><li>Contributed to research-oriented projects involving data analysis and problem-solving.</li>
+        <li>Built responsive, user-friendly web interfaces with interactive features.</li></ul>
+      </div>
+      <div class="titem">
+        <h3>INSPIRE Exhibition — Lucknow, Uttar Pradesh</h3>
+        <div class="when">September 2022</div>
+        <ul><li>Gained hands-on research exposure; strengthened analytical, teamwork and presentation skills.</li></ul>
+      </div>
+      <div class="titem">
+        <h3>Geological Field Training — IIT (ISM) Dhanbad</h3>
+        <div class="when">2 – 11 December 2025</div>
+        <ul><li>Lithological mapping and structural measurements; rock identification by grain size, texture and color.</li>
+        <li>Measured thickness of soil and rock layers.</li></ul>
+      </div>
+      <div class="titem">
+        <h3>BMES Workshop — Bridging Mathematics and Earth Sciences, IIT (ISM) Dhanbad</h3>
+        <div class="when">16 – 18 January 2026</div>
+        <ul><li>Modeling and simulation of Earth processes; hands-on computational and data-driven techniques.</li>
+        <li>Quantitative approaches to interpreting geophysical data.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow reveal">Projects</div>
+    <h2 class="section-title reveal">Selected Work</h2>
+    <div class="reveal">
+      <div class="projcard"><h3>FoodNest — MERN Food &amp; Grocery Ordering Platform</h3>
+        <p style="color:var(--sub)">A full-stack food and grocery ordering platform: category browsing with live search, a shopping cart with flexible portions and quantities, order history, and JWT-based authentication. Deployed on Render with a MongoDB Atlas backend. Also includes a separate React Native (Expo) mobile client that reuses the same backend and database, rebuilt with a dedicated design system, centralized API layer, and Context-based state management.</p>
+        <div class="tagrow"><span class="tag">React 18</span><span class="tag">React Router</span><span class="tag">Bootstrap 5</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB Atlas</span><span class="tag">JWT</span><span class="tag">React Native / Expo</span></div>
+        <div class="btnrow" style="margin-top:16px"><a href="https://github.com/Sakhya353" target="_blank" rel="noopener" class="btn">View on GitHub</a></div>
+      </div>
+      <div class="projcard"><h3>Earthquake Data Analysis &amp; Web Application</h3>
+        <p style="color:var(--sub)">Interactive web-based tool processing PEER ground-motion records to compute time vector, PGA, PGV and PGD, with visualization built for exploring ground-motion parameters.</p>
+        <div class="tagrow"><span class="tag">Python</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </div>
+      <div class="projcard"><h3>Molecular Logic Gates</h3>
+        <div class="when" style="color:var(--sub); font-family:var(--mono); font-size:.8rem; margin-bottom:6px">July 2024 – December 2024</div>
+        <p style="color:var(--sub)">Explored how molecules can perform AND / OR / NOT logic operations, responding to chemical inputs and producing an ON/OFF output, often as light.</p>
+        <div class="tagrow"><span class="tag">Python</span></div>
+      </div>
+      <div class="projcard"><h3>Application of Tensor Analysis in Astrophysics (Ricci Tensor)</h3>
+        <div class="when" style="color:var(--sub); font-family:var(--mono); font-size:.8rem; margin-bottom:6px">January 2025 – April 2025</div>
+        <p style="color:var(--sub)">Applied tensor analysis via the Ricci tensor to understand the flattening of spacetime and the conditions under which curved geometry, produced by matter and energy, approaches flat space.</p>
+        <div class="tagrow"><span class="tag">Python</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="field">
+  <div class="wrap">
+    <div class="eyebrow reveal">Field Geology</div>
+    <h2 class="section-title reveal">Geological Field Training</h2>
+    <p class="section-sub reveal">Lithological mapping, structural measurements, and rock identification by grain size, texture and color during field training at IIT (ISM) Dhanbad.</p>
+    <svg class="geo-svg reveal" viewBox="0 0 700 220" width="100%" height="220">
+      <rect x="0" y="150" width="700" height="70" fill="var(--panel2)"/>
+      <rect x="0" y="100" width="700" height="50" fill="var(--grid)"/>
+      <rect x="0" y="60" width="700" height="40" fill="var(--line)"/>
+      <rect x="0" y="0" width="700" height="60" fill="var(--panel)"/>
+      <text x="16" y="30" fill="var(--sub)" font-size="12" font-family="IBM Plex Mono">Soil</text>
+      <text x="16" y="85" fill="var(--sub)" font-size="12" font-family="IBM Plex Mono">Sedimentary layer</text>
+      <text x="16" y="130" fill="var(--sub)" font-size="12" font-family="IBM Plex Mono">Rock layer</text>
+      <text x="16" y="190" fill="var(--sub)" font-size="12" font-family="IBM Plex Mono">Bedrock</text>
+    </svg>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow reveal">Education</div>
+    <h2 class="section-title reveal">Academic Timeline</h2>
+    <div class="timeline reveal">
+      <div class="titem"><h3>M.Sc.Tech Applied Geophysics</h3><div class="college-line"><span class="college-name">Indian Institute of Technology (Indian School of Mines), Dhanbad</span></div><div class="when">July 2025 – May 2028</div><ul><li>CGPA 8.33/10 (up to 1st semester)</li></ul></div>
+      <div class="titem"><h3>B.Sc. Physics — Deen Dayal Upadhyaya Gorakhpur University</h3><div class="when">July 2022 – May 2025</div><ul><li>CGPA 7.68/10</li></ul></div>
+      <div class="titem"><h3>12th — Sankar I. C. Gorakhpur</h3><div class="when">April 2021 – April 2022</div><ul><li>82.4%</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow reveal">Skills</div>
+    <h2 class="section-title reveal">Toolkit</h2>
+    <div class="skillgrid reveal" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="eyebrow reveal">Achievements &amp; Positions</div>
+    <h2 class="section-title reveal">Recognition</h2>
+    <div class="achgrid reveal">
+      <div class="ach">Selected among the top 1% students by the Government of Uttar Pradesh.</div>
+      <div class="ach">INSPIRE Scholarship recipient — Department of Science and Technology (DST), Government of India.</div>
+      <div class="ach">Secured 7th rank in the INSPIRE Science Exhibition.</div>
+      <div class="ach">Volunteer, National Service Scheme (NSS), D.D.U. Gorakhpur University.</div>
+      <div class="ach">Class Representative, D.D.U. Gorakhpur University.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-bottom:none">
+  <div class="wrap">
+    <div class="eyebrow reveal">Contact</div>
+    <h2 class="section-title reveal">Let's work on the next research problem.</h2>
+    <div class="contactgrid reveal">
+      <a class="btn primary" href="mailto:25mc0083@iitism.ac.in">Email Me</a>
+      <a class="btn" href="https://linkedin.com/in/sakhya-sharma-12289737a" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Sakhya353" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p style="margin-top:20px; color:var(--sub); font-family:var(--mono); font-size:.9rem">25mc0083@iitism.ac.in · +91-7985430070</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo">Sakhya Sharma</div>
+    <p>M.Sc.Tech Applied Geophysics</p><p><span class="college-name">Indian Institute of Technology (Indian School of Mines), Dhanbad</span></p>
+    <div class="flinks"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#lab">Scientific Lab</a><a href="#contact">Contact</a><a href="assets/documents/Sakhya-Sharma-CV.pdf" download>CV</a></div>
+    <p>© 2026 Sakhya Sharma</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
